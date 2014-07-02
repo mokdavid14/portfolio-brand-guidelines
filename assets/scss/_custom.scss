@@ -1,0 +1,201 @@
+$playstationDarkBlue: #003791;
+
+
+// Global Settings
+@font-face {
+    font-family: 'helvetica_neue';
+    src: url('../fonts/HelveticaNeue.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+	font-family: 'helvetica_neue', 'Arial', sans-serif;
+	color: $playstationDarkBlue;
+}
+h1, h2, h3, h4, h5, h6{
+	font-family: 'helvetica_neue', 'Arial', sans-serif;
+	color: $playstationDarkBlue;
+}
+button.secondary, .button.secondary{
+	color: $playstationDarkBlue;
+}
+
+
+// Top Navigation Bar
+
+#guideline-label:hover{
+	background-color: white;
+	color: $playstationDarkBlue;
+}
+// .top-bar-section ul li > a:hover{
+// 	background-color: white;
+// }
+
+.top-bar{
+	padding-bottom: 1px;
+	border-bottom: 1px solid $playstationDarkBlue;
+}
+
+@media only screen and (min-width: 40.063em){
+	.top-bar {
+		background: white;
+		border-bottom: 1px solid #003791;
+	}
+}
+
+.contain-to-grid, .top-bar, .top-bar-section ul li{
+	background: white;
+	margin-top: -1px;
+	// border-bottom: 1px solid #003791;
+}
+
+.top-bar-section ul{
+	border-top: 1px solid $playstationDarkBlue;
+}
+.top-bar-section ul li > a{
+	color: $playstationDarkBlue;
+	// border-bottom: 1px solid #003791;
+	margin-top: -1px;
+}
+.top-bar-section ul li.active > a{
+	background: $playstationDarkBlue;
+}
+
+@media only screen and (min-width: 40.063em){
+	.top-bar-section li:not(.has-form) a:not(.button) {
+		background: white;
+		color: $playstationDarkBlue;
+		border-bottom: 1px solid $playstationDarkBlue;
+	}
+	.top-bar-section li.active:not(.has-form) a:not(.button){
+		background: $playstationDarkBlue;
+		color: white;
+		// margin-top: -1px;
+	}
+	h2{
+		padding-bottom: 20px;
+	}
+}
+
+.top-bar.expanded .title-area{
+	background-color: white;
+	border-bottom: 1px solid $playstationDarkBlue;
+}
+
+.top-bar .toggle-topbar.menu-icon a span::after{
+	box-shadow: 0 0px 0 1px $playstationDarkBlue, 0 7px 0 1px $playstationDarkBlue, 0 14px 0 1px $playstationDarkBlue;
+}
+.top-bar .toggle-topbar.menu-icon a span:hover:after {
+  box-shadow: 0 0px 0 1px #0054DD, 0 7px 0 1px #0054DD, 0 14px 0 1px #0054DD;
+}
+
+
+// Main Content
+
+#bg {
+  position: fixed; 
+  top: -50%; 
+  left: -50%; 
+  width: 200%; 
+  height: 200%;
+}
+#bg img {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  min-width: 50%;
+  min-height: 50%;
+}
+.section{
+	background-color: white;
+	padding-top: 20px;
+}
+
+
+// Footer
+
+#footer{
+	margin-bottom: 40px;
+	margin-top: 2px;
+}
+ul.pagination li.current a{
+	background-color: $playstationDarkBlue;
+}
+ul.pagination li a{
+	color: $playstationDarkBlue;
+}
+
+
+// About Section/Home Page
+
+.panel h1, .panel h2, .panel h3, .panel h4, .panel h5, 
+.panel h6, .panel p, .panel li, .panel dl{
+	color: $playstationDarkBlue;
+}
+// Small and medium
+@media only screen and (max-width: 64em){
+	#main-logo{
+		display: block;
+		margin: 0 auto;
+	}
+	#pillar-column{
+		height: 250px;
+	}
+}
+// Large and above
+@media only screen and (min-width: 64.063em){
+	#guidelines-title{
+		margin-top: 42px;
+	}
+	#pillar-column{
+		height: 200px;
+	}
+}
+#main-logo{
+	padding: 11px;
+}
+
+
+// Logo Section
+
+#logo-tabs{
+	padding: 10px;
+	border: 1px solid $playstationDarkBlue;
+}
+.tabs dd.active a, .tabs .tab-title.active a{
+	background: $playstationDarkBlue;
+	color: white;
+}
+.tabs dd > a, .tabs .tab-title > a{
+	background: white;
+	color: $playstationDarkBlue;
+	// border: 1px solid $playstationDarkBlue;
+}
+
+.lock-ups{
+	max-height: 115px;
+}
+
+.accordion dd > a{
+	border-bottom: 1px solid white;
+}
+.accordion dd > .content.active{
+	border-bottom: 3px solid #e8e8e8;
+}
+
+
+
+// Typeface Section
+#sst-fonts{
+	margin-top: 0.2rem;
+}
+
+@media only screen and (max-width: 40em){
+	.color-column{
+		margin-top: 15%;
+	}
+}
+
