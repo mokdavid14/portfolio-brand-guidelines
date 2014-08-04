@@ -158,6 +158,11 @@ ul.pagination li a{
 	padding: 11px;
 }
 
+@media only screen and (max-width: 40em) {
+  .disclaimer-modal {
+    min-height: 0;
+  }
+}
 
 // Logo Section
 
@@ -172,7 +177,6 @@ ul.pagination li a{
 .tabs dd > a, .tabs .tab-title > a{
 	background: white;
 	color: $playstationDarkBlue;
-	// border: 1px solid $playstationDarkBlue;
 }
 
 .lock-ups{

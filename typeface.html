@@ -19,7 +19,31 @@
 	</div>
 
 	<!-- Inject Top Navigation Bar -->
-	<?php include 'includes/nav.inc.php'; ?>
+	<div class="sticky contain-to-grid" id="navigation">
+		<nav class="top-bar" data-topbar data-options="">
+			<ul class="title-area">
+			    <li>
+					<a href="index.html">
+			    	<img src="assets/images/logo_blue_shrunk.png" alt="PlayStation 4 Logo" style="padding: 11px;">
+					</a>
+			    </li>
+			    <li class="toggle-topbar menu-icon"><a href="index.html"><span>Menu</span></a></li>
+		  	</ul>
+		  	<section class="top-bar-section">
+			    <!-- Right Nav Section -->
+			    <ul class="right">
+			      <li><a href="index.html">About</a></li>
+			      <li><a href="logo.html">Logo</a></li>
+			      <li class="active"><a href="typeface.html">Typeface</a></li>
+			    </ul>
+
+			    <!-- Left Nav Section -->
+			    <ul class="left hide-for-small-only">
+			      <li><a id="guideline-label" href="index.html">Brand Guidelines</a></li>
+			    </ul>
+			 </section>
+		</nav>
+	</div>
 	
 	<!-- Main Content -->
 	<div class="row" id="mainContent">
@@ -88,8 +112,25 @@
 
 
 	<!-- Inject Footer/Pagination -->
-	<?php include 'includes/pagination.inc.php'; ?>
+	<div id="footer" class="row">
+		<div class="small-12 columns spacing">
 
+			<div class="row section" id="textAndColor">
+				<div class="small-12 columns">
+
+					<div class="pagination-centered">
+					  <ul class="pagination">
+					    <li><a href="index.html">About</a></li>
+					    <li><a href="logo.html">Logo</a></li>
+					    <li class="current"><a href="typeface.html">Typeface</a></li>
+					  </ul>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</div>
 
 
 	<script src="assets/js/fastclick.js"></script>
@@ -101,7 +142,9 @@
 	<script src="assets/js/foundation/foundation.topbar.js"></script>
 	<script src="assets/js/foundation/foundation.tab.js"></script>
 
+	<script>
+		$(document).foundation();
+	</script>
 
-	<script src="assets/js/custom.js"></script>
 </body>
 </html>

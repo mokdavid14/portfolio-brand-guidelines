@@ -7000,46 +7000,52 @@ ul.pagination li a {
   padding: 11px;
 }
 
-/* line 164, ../scss/_custom.scss */
+@media only screen and (max-width: 40em) {
+  /* line 162, ../scss/_custom.scss */
+  .disclaimer-modal {
+    min-height: 0;
+  }
+}
+/* line 169, ../scss/_custom.scss */
 #logo-tabs {
   padding: 10px;
   border: 1px solid #003791;
 }
 
-/* line 168, ../scss/_custom.scss */
+/* line 173, ../scss/_custom.scss */
 .tabs dd.active a, .tabs .tab-title.active a {
   background: #003791;
   color: white;
 }
 
-/* line 172, ../scss/_custom.scss */
+/* line 177, ../scss/_custom.scss */
 .tabs dd > a, .tabs .tab-title > a {
   background: white;
   color: #003791;
 }
 
-/* line 178, ../scss/_custom.scss */
+/* line 183, ../scss/_custom.scss */
 .lock-ups {
   max-height: 115px;
 }
 
-/* line 182, ../scss/_custom.scss */
+/* line 187, ../scss/_custom.scss */
 .accordion dd > a {
   border-bottom: 1px solid white;
 }
 
-/* line 185, ../scss/_custom.scss */
+/* line 190, ../scss/_custom.scss */
 .accordion dd > .content.active {
   border-bottom: 3px solid #e8e8e8;
 }
 
-/* line 192, ../scss/_custom.scss */
+/* line 197, ../scss/_custom.scss */
 #sst-fonts {
   margin-top: 0.2rem;
 }
 
 @media only screen and (max-width: 40em) {
-  /* line 197, ../scss/_custom.scss */
+  /* line 202, ../scss/_custom.scss */
   .color-column {
     margin-top: 15%;
   }
